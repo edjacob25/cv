@@ -24,7 +24,7 @@
 % Color definitions
 \usepackage[usenames,dvipsnames]{xcolor}
 \definecolor{date}{HTML}{666666}
-\definecolor{title}{HTML}{1D76E2}
+\definecolor{title}{HTML}{40a946}
 \definecolor{primary}{HTML}{2b2b2b}
 \definecolor{headings}{HTML}{6A6A6A}
 \definecolor{subheadings}{HTML}{333333}
@@ -35,9 +35,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \def \pathtitlefont {fonts/sourcesanspro/} 
 \def \firstnamefont {sourcesanspro-SemiBold}
-\def \secondnamefont {sourcesanspro-light}
+\def \secondnamefont {sourcesanspro-regular}
 \def \titlefont {\firstnamefont}
-\def \namefontsize {9.5}
+\def \namefontsize {10}
 
 %% Office Code Pro D Title:
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -118,7 +118,7 @@
 \def \mainfontbold {inter-semibold}
 % \def \mainbolditalicfont {}
 % \def \mainitalicfont {}
-\def \mainfontsize {9.5}
+\def \mainfontsize {10}
 \def \mainsansfont {inter-light}
 
 %Main Subheading Font Definitions
@@ -205,6 +205,10 @@ Last Updated on \today
 % Descriptors command
 \newcommand{\descript}[1]{
 \color{subheadings}\raggedright\scshape\fontspec[Path = \pathdescriptorfont]{\descriptorfont}\fontsize{\descriptorsize}{13pt}\selectfont {#1 \\} \normalfont}
+
+% Descriptors command
+\newcommand{\rundescript}[1]{
+\color{subheadings}\raggedright\scshape\fontspec[Path = \pathdescriptorfont]{\descriptorfont}\fontsize{\descriptorsize}{13pt}\selectfont {#1} \normalfont}
 
 % Location command
 \newcommand{\location}[1]{
